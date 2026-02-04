@@ -1,0 +1,1308 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jul  5 01:11:34 2025
+# Process ID: 10403
+# Current directory: /home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1
+# Command line: vivado -log riscv_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_top.tcl
+# Log file: /home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/riscv_top.vds
+# Journal file: /home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source riscv_top.tcl -notrace
+Command: synth_design -top riscv_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10481 
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/memory.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1525.180 ; gain = 93.250 ; free physical = 160507 ; free virtual = 608250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_top' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/riscv_soc_top.v:4]
+	Parameter SYS_CLK_FREQ_HZ bound to: 70000000 - type: integer 
+	Parameter UART_BAUD_RATE bound to: 9600 - type: integer 
+	Parameter SUPPORT_MULDIV bound to: 1 - type: integer 
+	Parameter SUPPORT_SUPER bound to: 0 - type: integer 
+	Parameter SUPPORT_MMU bound to: 0 - type: integer 
+	Parameter SUPPORT_LOAD_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_MUL_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_REGFILE_XILINX bound to: 0 - type: integer 
+	Parameter EXTRA_DECODE_STAGE bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MIN bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MAX bound to: 65535 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40057]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 59 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 22 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 4 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40057]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'riscv_core' [/home/arjunmallay/riscv-master/core/riscv/riscv_core.v:42]
+	Parameter SUPPORT_MULDIV bound to: 1 - type: integer 
+	Parameter SUPPORT_SUPER bound to: 0 - type: integer 
+	Parameter SUPPORT_MMU bound to: 0 - type: integer 
+	Parameter SUPPORT_LOAD_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_MUL_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_REGFILE_XILINX bound to: 0 - type: integer 
+	Parameter EXTRA_DECODE_STAGE bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MIN bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MAX bound to: 65535 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'riscv_exec' [/home/arjunmallay/riscv-master/core/riscv/riscv_exec.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_alu' [/home/arjunmallay/riscv-master/core/riscv/riscv_alu.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_alu' (6#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_alu.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_exec' (7#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_exec.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_decode' [/home/arjunmallay/riscv-master/core/riscv/riscv_decode.v:42]
+	Parameter SUPPORT_MULDIV bound to: 1 - type: integer 
+	Parameter EXTRA_DECODE_STAGE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'riscv_decoder' [/home/arjunmallay/riscv-master/core/riscv/riscv_decoder.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_decoder' (8#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_decoder.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_decode' (9#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_decode.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mmu' [/home/arjunmallay/riscv-master/core/riscv/riscv_mmu.v:42]
+	Parameter MEM_CACHE_ADDR_MIN bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MAX bound to: 65535 - type: integer 
+	Parameter SUPPORT_MMU bound to: 0 - type: integer 
+	Parameter STATE_W bound to: 2 - type: integer 
+	Parameter STATE_IDLE bound to: 0 - type: integer 
+	Parameter STATE_LEVEL_FIRST bound to: 1 - type: integer 
+	Parameter STATE_LEVEL_SECOND bound to: 2 - type: integer 
+	Parameter STATE_UPDATE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mmu' (10#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_mmu.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_lsu' [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:42]
+	Parameter MEM_CACHE_ADDR_MIN bound to: 0 - type: integer 
+	Parameter MEM_CACHE_ADDR_MAX bound to: 65535 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:224]
+INFO: [Synth 8-6157] synthesizing module 'riscv_lsu_fifo' [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:438]
+	Parameter WIDTH bound to: 36 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter ADDR_W bound to: 1 - type: integer 
+	Parameter COUNT_W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_lsu_fifo' (11#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:438]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_lsu' (12#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_csr' [/home/arjunmallay/riscv-master/core/riscv/riscv_csr.v:42]
+	Parameter SUPPORT_MULDIV bound to: 1 - type: integer 
+	Parameter SUPPORT_SUPER bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'riscv_csr_regfile' [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:41]
+	Parameter SUPPORT_MTIMECMP bound to: 1 - type: integer 
+	Parameter SUPPORT_SUPER bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element csr_medeleg_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:514]
+WARNING: [Synth 8-6014] Unused sequential element csr_scause_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:520]
+WARNING: [Synth 8-6014] Unused sequential element csr_stval_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:521]
+WARNING: [Synth 8-6014] Unused sequential element csr_sscratch_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:523]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_csr_regfile' (13#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_csr' (14#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_csr.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_multiplier' [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:42]
+	Parameter MULT_STAGES bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element result_e3_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_multiplier' (15#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_divider' [/home/arjunmallay/riscv-master/core/riscv/riscv_divider.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_divider' (16#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_divider.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_issue' [/home/arjunmallay/riscv-master/core/riscv/riscv_issue.v:42]
+	Parameter SUPPORT_MULDIV bound to: 1 - type: integer 
+	Parameter SUPPORT_DUAL_ISSUE bound to: 1 - type: integer 
+	Parameter SUPPORT_LOAD_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_MUL_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_REGFILE_XILINX bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'riscv_pipe_ctrl' [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:41]
+	Parameter SUPPORT_LOAD_BYPASS bound to: 1 - type: integer 
+	Parameter SUPPORT_MUL_BYPASS bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element npc_e1_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:172]
+WARNING: [Synth 8-6014] Unused sequential element npc_e2_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:252]
+WARNING: [Synth 8-6014] Unused sequential element npc_wb_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_pipe_ctrl' (17#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:41]
+INFO: [Synth 8-6157] synthesizing module 'riscv_regfile' [/home/arjunmallay/riscv-master/core/riscv/riscv_regfile.v:41]
+	Parameter SUPPORT_REGFILE_XILINX bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_regfile' (18#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_regfile.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_issue' (19#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_issue.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_fetch' [/home/arjunmallay/riscv-master/core/riscv/riscv_fetch.v:42]
+	Parameter SUPPORT_MMU bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element stall_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_fetch.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_fetch' (20#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_fetch.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_core' (21#1) [/home/arjunmallay/riscv-master/core/riscv/riscv_core.v:42]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:1]
+	Parameter HALT_INSTRUCTION bound to: -1 - type: integer 
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000010100 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000010101 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000010110 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000010111 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000011000 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000011001 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000011010 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000011011 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+WARNING: [Synth 8-151] case item 30'b000000000000000000000000011100 is unreachable [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (22#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/instruction_memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/memory.v:3]
+	Parameter ADDR_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'memory' (23#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'riscv_performance_counter' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/performancecounter.v:27]
+	Parameter IDLE bound to: 2'b00 
+	Parameter COUNTING bound to: 2'b01 
+	Parameter DONE bound to: 2'b10 
+	Parameter HALT_INSTRUCTION bound to: -1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_performance_counter' (24#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/performancecounter.v:27]
+INFO: [Synth 8-6157] synthesizing module 'MemoryUartDumper' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/MemoryUartDumper.v:4]
+	Parameter MEM_DUMP_SIZE bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter CLK_FREQ_HZ bound to: 70000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter S_IDLE bound to: 4'b0000 
+	Parameter S_START_HEADER bound to: 4'b0001 
+	Parameter S_SEND_HEADER bound to: 4'b0010 
+	Parameter S_WAIT_HEADER bound to: 4'b0011 
+	Parameter S_READ_MEM bound to: 4'b0100 
+	Parameter S_SEND_HEX_H bound to: 4'b0101 
+	Parameter S_WAIT_HEX_H bound to: 4'b0110 
+	Parameter S_SEND_HEX_L bound to: 4'b0111 
+	Parameter S_WAIT_HEX_L bound to: 4'b1000 
+	Parameter S_SEND_SPACE bound to: 4'b1001 
+	Parameter S_WAIT_SPACE bound to: 4'b1010 
+	Parameter S_SEND_NEWLINE bound to: 4'b1011 
+	Parameter S_WAIT_NEWLINE bound to: 4'b1100 
+	Parameter S_FINISH bound to: 4'b1101 
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/uart_tx.v:3]
+	Parameter BAUD_RATE_DIV bound to: 6980 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter DATA bound to: 2 - type: integer 
+	Parameter STOP bound to: 3 - type: integer 
+WARNING: [Synth 8-5788] Register tx_data_reg in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/uart_tx.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (25#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/uart_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryUartDumper' (26#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/MemoryUartDumper.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_top' (27#1) [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/riscv_soc_top.v:4]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[31]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[30]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[29]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[28]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[27]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[26]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[25]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[24]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[23]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[22]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[21]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[20]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[19]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[18]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[17]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[16]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[15]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[14]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[13]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[12]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[11]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[10]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[9]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[8]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[7]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[6]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[5]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[4]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[3]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[2]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[1]
+WARNING: [Synth 8-3331] design riscv_performance_counter has unconnected port instruction_i[0]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[31]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[30]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[29]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[28]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[27]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[26]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[25]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[24]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[23]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[22]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[21]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[20]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[19]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[18]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[17]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[16]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[15]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[14]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[13]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[12]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[1]
+WARNING: [Synth 8-3331] design memory has unconnected port daddr_i[0]
+WARNING: [Synth 8-3331] design instruction_memory has unconnected port iaddr_i[1]
+WARNING: [Synth 8-3331] design instruction_memory has unconnected port iaddr_i[0]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_rd_i[4]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_rd_i[3]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_rd_i[2]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_rd_i[1]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_rd_i[0]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[31]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[30]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[29]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[28]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[27]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[26]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[25]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[24]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[23]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[22]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[21]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[20]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[19]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[18]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[17]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[16]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[15]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[14]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[13]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[12]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[11]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[10]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[9]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[8]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[7]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[6]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[5]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[4]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[3]
+WARNING: [Synth 8-3331] design riscv_pipe_ctrl has unconnected port issue_branch_target_i[2]
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port fetch_instr_exec_i
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_request_i
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_is_taken_i
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_is_not_taken_i
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_source_i[31]
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_source_i[30]
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_source_i[29]
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_source_i[28]
+WARNING: [Synth 8-3331] design riscv_issue has unconnected port branch_exec_source_i[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1579.438 ; gain = 147.508 ; free physical = 160506 ; free virtual = 608250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1579.438 ; gain = 147.508 ; free physical = 160508 ; free virtual = 608252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1579.438 ; gain = 147.508 ; free physical = 160508 ; free virtual = 608252
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clock_wizard_inst/inst'
+Finished Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clock_wizard_inst/inst'
+Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clock_wizard_inst/inst'
+Finished Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clock_wizard_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/constrs_1/new/nexysconstraints.xdc]
+Finished Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/constrs_1/new/nexysconstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/constrs_1/new/nexysconstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1969.223 ; gain = 0.004 ; free physical = 159631 ; free virtual = 607376
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159757 ; free virtual = 607503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159757 ; free virtual = 607503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clock_wizard_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_wizard_inst/inst. (constraint file  /home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/dont_touch.xdc, line 10).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159759 ; free virtual = 607505
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "branch_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "branch_taken_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "branch_ret_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "branch_jmp_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/arjunmallay/riscv-master/core/riscv/riscv_lsu.v:190]
+INFO: [Synth 8-5544] ROM "mem_wr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_wr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_wr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'csr_sepc_q_reg[31:0]' into 'csr_mideleg_q_reg[31:0]' [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:518]
+INFO: [Synth 8-4471] merging register 'csr_stvec_q_reg[31:0]' into 'csr_mideleg_q_reg[31:0]' [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:519]
+INFO: [Synth 8-4471] merging register 'csr_satp_q_reg[31:0]' into 'csr_mideleg_q_reg[31:0]' [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:522]
+WARNING: [Synth 8-6014] Unused sequential element csr_sepc_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:518]
+WARNING: [Synth 8-6014] Unused sequential element csr_stvec_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:519]
+WARNING: [Synth 8-6014] Unused sequential element csr_satp_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_csr_regfile.v:522]
+INFO: [Synth 8-5546] ROM "branch_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "csr_mepc_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "csr_mepc_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "csr_sr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csr_sr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "csr_sr_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_mcause_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_mtval_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_mtvec_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_mie_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "csr_mcycle_h_q" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "csr_mscratch_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_mtimecmp_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "exception_e1_q" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:139]
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r1_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r2_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r3_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r4_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r5_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r6_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r7_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r8_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r9_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r10_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r11_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r12_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r13_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r14_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r15_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r16_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r17_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r18_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r19_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r20_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r21_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r22_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r23_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r24_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r25_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r26_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r27_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r28_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r29_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r30_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REGFILE.reg_r31_q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "data" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'riscv_performance_counter'
+INFO: [Synth 8-5544] ROM "cycle_count_o" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counting_active_o" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_busy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'mem_addr_reg[11:0]' into 'byte_counter_reg[11:0]' [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/MemoryUartDumper.v:70]
+WARNING: [Synth 8-6014] Unused sequential element mem_addr_reg was removed.  [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/MemoryUartDumper.v:70]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MemoryUartDumper'
+INFO: [Synth 8-5546] ROM "mem_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "header_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_byte" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "startup_counter" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dump_trigger" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "blink_state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                COUNTING |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'riscv_performance_counter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    DATA |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                  000000000000001 |                             0000
+          S_START_HEADER |                  000000000000010 |                             0001
+           S_SEND_HEADER |                  000000000000100 |                             0010
+           S_WAIT_HEADER |                  000000000001000 |                             0011
+              S_READ_MEM |                  000000000010000 |                             0100
+            S_SEND_HEX_H |                  000000000100000 |                             0101
+            S_WAIT_HEX_H |                  000000001000000 |                             0110
+            S_SEND_HEX_L |                  000000010000000 |                             0111
+            S_WAIT_HEX_L |                  000000100000000 |                             1000
+          S_SEND_NEWLINE |                  000001000000000 |                             1011
+          S_WAIT_NEWLINE |                  000010000000000 |                             1100
+            S_SEND_SPACE |                  000100000000000 |                             1001
+            S_WAIT_SPACE |                  001000000000000 |                             1010
+                S_FINISH |                  010000000000000 |                             1101
+                  iSTATE |                  100000000000000 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MemoryUartDumper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159742 ; free virtual = 607489
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 3     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               66 Bit    Registers := 1     
+	               63 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 77    
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 60    
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 1     
+	   3 Input     33 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 113   
+	   3 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	  23 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 5     
+	   2 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	  15 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	  15 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 10    
+	   5 Input      6 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	  21 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 105   
+	   8 Input      1 Bit        Muxes := 2     
+	  21 Input      1 Bit        Muxes := 4     
+	  22 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module riscv_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module riscv_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 3     
+Module riscv_exec 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	  11 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 2     
+Module riscv_lsu_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               36 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module riscv_lsu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module riscv_csr_regfile 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 25    
+	   3 Input     32 Bit        Muxes := 2     
+	  23 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	  25 Input      4 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 23    
+	  22 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module riscv_csr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module riscv_multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     33 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 4     
+Module riscv_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               63 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     63 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+Module riscv_pipe_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	               10 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 20    
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module riscv_regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module riscv_issue 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module riscv_fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               66 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+Module instruction_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module riscv_performance_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+Module MemoryUartDumper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 5     
+	  15 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  15 Input      8 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "branch_taken_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "branch_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "branch_ret_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "branch_jmp_r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "u_csrfile/csr_sr_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u_csrfile/csr_mscratch_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_csrfile/csr_mie_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_csrfile/csr_mtimecmp_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_csrfile/csr_mtvec_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "u_csrfile/csr_mcycle_h_q" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP mult_result_w, operation Mode is: A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_ra_e1_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:174]
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_rb_e1_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:175]
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_ra_e2_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:254]
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_ra_wb_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:380]
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_rb_e2_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:255]
+WARNING: [Synth 8-6014] Unused sequential element u_pipe_ctrl/operand_rb_wb_q_reg was removed.  [/home/arjunmallay/riscv-master/core/riscv/riscv_pipe_ctrl.v:381]
+WARNING: [Synth 8-6014] Unused sequential element mem_dumper/bytes_sent_debug_reg was removed.  [/home/arjunmallay/riscv-master/riscv-org/riscv-org.srcs/sources_1/new/MemoryUartDumper.v:76]
+INFO: [Synth 8-5544] ROM "mem_dumper/state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_dumper/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_dumper/uart_tx_inst/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_dumper/mem_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "startup_counter" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dump_trigger" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "blink_state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[30]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[1]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[0]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[31]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[29]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[28]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[27]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[26]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[25]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[24]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[23]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[22]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[21]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[20]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[19]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[18]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[17]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[16]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[15]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[14]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[13]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[12]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[10]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[9]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[8]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[4]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[3]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[2]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[5]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[6]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mpriv_q_reg[0]' (FDP) to 'core_inst/u_csr/u_csrfile/csr_mpriv_q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core_inst/u_csr/\u_csrfile/csr_mpriv_q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[7]' (FDC) to 'core_inst/u_csr/u_csrfile/csr_mideleg_q_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (core_inst/u_csr/\u_csrfile/csr_mideleg_q_reg[11] )
+INFO: [Synth 8-3886] merging instance 'core_inst/u_csr/u_csrfile/irq_priv_q_reg[0]' (FDPE) to 'core_inst/u_csr/u_csrfile/irq_priv_q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core_inst/u_csr/\u_csrfile/irq_priv_q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_15' (FDRE) to 'mem_dumper/byte_counter_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_13' (FDRE) to 'mem_dumper/byte_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_12' (FDRE) to 'mem_dumper/byte_counter_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_11' (FDRE) to 'mem_dumper/byte_counter_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_10' (FDRE) to 'mem_dumper/byte_counter_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_9' (FDRE) to 'mem_dumper/byte_counter_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_8' (FDRE) to 'mem_dumper/byte_counter_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mem_dumper/byte_counter_reg[10]' (FDRE) to 'i_6'
+INFO: [Synth 8-3886] merging instance 'mem_dumper/byte_counter_reg[9]' (FDRE) to 'i_7'
+INFO: [Synth 8-3886] merging instance 'mem_dumper/byte_counter_reg[11]' (FDRE) to 'i_5'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[1]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[2]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (core_inst/u_issue/\u_pipe_ctrl/exception_e1_q_reg[5] )
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[31]' (FDRE) to 'instruction_mem/irdata_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[30]' (FDRE) to 'instruction_mem/irdata_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[28]' (FDRE) to 'instruction_mem/irdata_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[29]' (FDRE) to 'instruction_mem/irdata_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[6]' (FDRE) to 'instruction_mem/irdata_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[27]' (FDRE) to 'instruction_mem/irdata_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[0]' (FDSE) to 'instruction_mem/irdata_o_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\instruction_mem/irdata_o_reg[1] )
+INFO: [Synth 8-3886] merging instance 'instruction_mem/irdata_o_reg[2]' (FDRE) to 'instruction_mem/irdata_o_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\instruction_mem/irdata_o_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_dumper/tx_data_reg[7] )
+INFO: [Synth 8-3886] merging instance 'led_display_reg[13]' (FDR) to 'led_display_reg[15]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/pc_e1_q_reg[0]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/pc_e1_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[5]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/pc_e1_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/pc_e1_q_reg[1]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[0]' (FDCE) to 'core_inst/u_issue/u_pipe_ctrl/exception_e1_q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (core_inst/u_issue/\u_pipe_ctrl/exception_e1_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_dumper/uart_tx_inst/tx_data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (branch_ntaken_q_reg) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (branch_taken_q_reg) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[31]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[30]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[29]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[28]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[27]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[26]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[25]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[24]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[23]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[22]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[21]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[20]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[19]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[18]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[17]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[16]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[15]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[14]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[13]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[12]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[11]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[10]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[9]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[8]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[7]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[6]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[5]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[4]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[3]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[2]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[1]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_m_q_reg[0]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (branch_call_q_reg) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (branch_ret_q_reg) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (branch_jmp_q_reg) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[31]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[30]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[29]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[28]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[27]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[26]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[25]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[24]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[23]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[22]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[21]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[20]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[19]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[18]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[17]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[16]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[15]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[14]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[13]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[12]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[11]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[10]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[9]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[8]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[7]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[6]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[5]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[4]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[3]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[2]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[1]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (pc_x_q_reg[0]) is unused and will be removed from module riscv_exec.
+WARNING: [Synth 8-3332] Sequential element (mem_cacheable_q_reg) is unused and will be removed from module riscv_lsu.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[31]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[30]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[29]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[28]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[27]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[26]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[25]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[24]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[23]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[22]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[21]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[20]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[19]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[18]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[17]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[16]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[15]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[14]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[13]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[12]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[10]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[8]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[6]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[4]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[2]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mie_q_reg[0]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mip_next_q_reg[31]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mip_next_q_reg[30]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mip_next_q_reg[29]) is unused and will be removed from module riscv_csr.
+WARNING: [Synth 8-3332] Sequential element (u_csrfile/csr_mip_next_q_reg[28]) is unused and will be removed from module riscv_csr.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159621 ; free virtual = 607387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives        | 
++------------+------------------+-----------+----------------------+-------------------+
+|riscv_top   | mem/data_mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256   | 
++------------+------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|riscv_multiplier | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_multiplier | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_multiplier | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_multiplier | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159394 ; free virtual = 607160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 1969.223 ; gain = 537.293 ; free physical = 159413 ; free virtual = 607179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives        | 
++------------+------------------+-----------+----------------------+-------------------+
+|riscv_top   | mem/data_mem_reg | Implied   | 1 K x 32             | RAM128X1D x 256   | 
++------------+------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:120]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/arjunmallay/riscv-master/core/riscv/riscv_multiplier.v:121]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 2043.438 ; gain = 611.508 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159373 ; free virtual = 607139
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:17 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159373 ; free virtual = 607139
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   187|
+|3     |DSP48E1   |     4|
+|4     |LUT1      |   135|
+|5     |LUT2      |   560|
+|6     |LUT3      |   360|
+|7     |LUT4      |   555|
+|8     |LUT5      |   480|
+|9     |LUT6      |  1888|
+|10    |MUXF7     |   379|
+|11    |MUXF8     |   140|
+|12    |PLLE2_ADV |     1|
+|13    |RAM128X1D |   256|
+|14    |FDCE      |  1422|
+|15    |FDPE      |     3|
+|16    |FDRE      |  1205|
+|17    |FDSE      |     2|
+|18    |IBUF      |     3|
+|19    |OBUF      |    17|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------+------+
+|      |Instance            |Module                    |Cells |
++------+--------------------+--------------------------+------+
+|1     |top                 |                          |  7599|
+|2     |  clock_wizard_inst |clk_wiz_0                 |     4|
+|3     |    inst            |clk_wiz_0_clk_wiz         |     4|
+|4     |  core_inst         |riscv_core                |  6639|
+|5     |    u_div           |riscv_divider             |   539|
+|6     |    u_exec          |riscv_exec                |    44|
+|7     |      u_alu         |riscv_alu                 |    12|
+|8     |    u_csr           |riscv_csr                 |   574|
+|9     |      u_csrfile     |riscv_csr_regfile         |   436|
+|10    |    u_fetch         |riscv_fetch               |  1495|
+|11    |    u_issue         |riscv_issue               |  3411|
+|12    |      u_pipe_ctrl   |riscv_pipe_ctrl           |  1486|
+|13    |      u_regfile     |riscv_regfile             |  1923|
+|14    |    u_lsu           |riscv_lsu                 |   364|
+|15    |      u_lsu_request |riscv_lsu_fifo            |   185|
+|16    |    u_mul           |riscv_multiplier          |   212|
+|17    |  instruction_mem   |instruction_memory        |    22|
+|18    |  mem               |memory                    |   496|
+|19    |  mem_dumper        |MemoryUartDumper          |   233|
+|20    |    uart_tx_inst    |uart_tx                   |    68|
+|21    |  perf_counter      |riscv_performance_counter |    56|
++------+--------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.441 ; gain = 611.512 ; free physical = 159372 ; free virtual = 607138
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 652 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 2043.441 ; gain = 221.727 ; free physical = 159432 ; free virtual = 607198
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 2043.445 ; gain = 611.512 ; free physical = 159442 ; free virtual = 607208
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 970 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+258 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 2075.457 ; gain = 655.105 ; free physical = 159362 ; free virtual = 607128
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/arjunmallay/riscv-master/riscv-org/riscv-org.runs/synth_1/riscv_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_top_utilization_synth.rpt -pb riscv_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2099.473 ; gain = 0.000 ; free physical = 159332 ; free virtual = 607098
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  5 01:13:07 2025...

@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Jul  5 01:14:45 2025
+| Host         : vlsi.iitgn.ac.in running 64-bit CentOS Linux release 7.4.1708 (Core)
+| Command      : report_control_sets -verbose -file riscv_top_control_sets_placed.rpt
+| Design       : riscv_top
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    97 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            3 |
+|     10 |            1 |
+|     12 |            1 |
+|     14 |            2 |
+|    16+ |           89 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |             434 |          106 |
+| No           | Yes                   | No                     |              96 |           13 |
+| Yes          | No                    | No                     |              78 |           34 |
+| Yes          | No                    | Yes                    |            2416 |          421 |
+| Yes          | Yes                   | No                     |            2236 |          529 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+------------------------------------------------------------+-----------------------------------+------------------+----------------+
+|           Clock Signal           |                        Enable Signal                       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------------------------+------------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  clock_wizard_inst/inst/clk_out1 |                                                            |                                   |                1 |              2 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/uart_tx_inst/header_counter_reg[0][0]           | core_inst/u_issue/u_regfile/SR[0] |                2 |              8 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_sr_q_reg[3]              | core_inst/u_issue/u_regfile/SR[0] |                2 |              8 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mip_q_reg[1]             | core_inst/u_issue/u_regfile/SR[0] |                3 |              8 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mcause_q_reg[0][0]       | core_inst/u_issue/u_regfile/SR[0] |                3 |             10 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mie_q_reg[11][0]         | core_inst/u_issue/u_regfile/SR[0] |                3 |             12 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/uart_tx_inst/E[0]                               | core_inst/u_issue/u_regfile/SR[0] |                4 |             14 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/uart_tx_inst/tx_data[6]_i_1_n_0                 |                                   |                2 |             14 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/current_byte                                    | core_inst/u_issue/u_regfile/SR[0] |                8 |             16 |
+|  clock_wizard_inst/inst/clk_out1 | perf_counter/FSM_onehot_state_reg_n_0_[2]                  | core_inst/u_issue/u_regfile/SR[0] |                3 |             26 |
+|  clock_wizard_inst/inst/clk_out1 | perf_counter/FSM_onehot_state_reg_n_0_[1]                  | core_inst/u_issue/u_regfile/SR[0] |                4 |             26 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/uart_tx_inst/FSM_onehot_state_reg[0][0]         | core_inst/u_issue/u_regfile/SR[0] |                5 |             28 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_sr_q_reg[0]              | core_inst/u_issue/u_regfile/SR[0] |               13 |             50 |
+|  clock_wizard_inst/inst/clk_out1 | startup_counter[0]_i_1_n_0                                 | core_inst/u_issue/u_regfile/SR[0] |                7 |             52 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_fetch/branch_pc_q[31]_i_1_n_0                  | core_inst/u_issue/u_regfile/SR[0] |               11 |             62 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/pc_f_q_reg[31]               | core_inst/u_issue/u_regfile/SR[0] |               11 |             62 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]                           |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_1                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_0                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]                           |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_6                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_5                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_3                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_2                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_4                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_1                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[15]_0                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_3                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mtvec_q_reg[31][0]       | core_inst/u_issue/u_regfile/SR[0] |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_6                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mtval_q_reg[0][0]        | core_inst/u_issue/u_regfile/SR[0] |               11 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mtimecmp_q_reg[0][0]     | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/E[0]                                       |                                   |               32 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mscratch_q_reg[31][0]    | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r7_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_3                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_4                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_5                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_2                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_1                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_0                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]                            |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_6                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_5                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_4                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_2                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_2                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_1                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]_0                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[31]                           |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_6                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_5                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[23]_4                         |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/drdata_o_reg[7]_3                          |                                   |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r14_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               10 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r21_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r20_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               10 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r1_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               15 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r19_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r18_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               19 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r17_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               18 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r16_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               21 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r15_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r9_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               21 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r13_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               14 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r11_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               17 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r10_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               22 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r12_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               13 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/E[0]                         | core_inst/u_issue/u_regfile/SR[0] |               23 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_fetch/csr_wdata_e1_q_reg[31]_3[0]              | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_csr/u_csrfile/csr_mcycle_h_q                   | core_inst/u_issue/u_regfile/SR[0] |                8 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_div/div_complete_w                             | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r23_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_mepc_q_reg[0][0]         | core_inst/u_issue/u_regfile/SR[0] |               26 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r8_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               22 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r6_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r5_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               16 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r4_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |                9 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r3_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               11 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r30_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               19 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r29_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               15 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r22_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               12 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r24_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               19 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r25_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               14 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r26_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               16 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r27_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               14 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r28_q_reg[31][0] | core_inst/u_issue/u_regfile/SR[0] |               21 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/REGFILE.reg_r2_q_reg[31][0]  | core_inst/u_issue/u_regfile/SR[0] |               13 |             64 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/u_lsu_request/ram_q[0][35]_i_1_n_0         | core_inst/u_issue/u_regfile/SR[0] |               15 |             72 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/u_lsu_request/ram_q                        | core_inst/u_issue/u_regfile/SR[0] |               14 |             72 |
+|  clock_wizard_inst/inst/clk_out1 | mem_dumper/uart_tx_inst/byte_counter_reg[0][0]             | core_inst/u_issue/u_regfile/SR[0] |               20 |             90 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_fetch/E[0]                                     | core_inst/u_issue/u_regfile/SR[0] |               24 |            104 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_div/quotient_q                                 | core_inst/u_issue/u_regfile/SR[0] |               14 |            128 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_div/q_mask_q                                   | core_inst/u_issue/u_regfile/SR[0] |               21 |            190 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_lsu/mem_ls_q                                   | core_inst/u_issue/u_regfile/SR[0] |               55 |            252 |
+|  clock_wizard_inst/inst/clk_out1 |                                                            | core_inst/u_issue/u_regfile/SR[0] |              119 |            530 |
+|  clock_wizard_inst/inst/clk_out1 | core_inst/u_issue/u_pipe_ctrl/csr_wdata_wb_q_reg[0]_0      | core_inst/u_issue/u_regfile/SR[0] |              146 |            866 |
++----------------------------------+------------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+
